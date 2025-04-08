@@ -1,21 +1,28 @@
-import React from "react";
+// src/components/Navbar.jsx
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <h1 className="text-2xl font-extrabold text-green-700">Smart Waste Management</h1>
-        <div className="space-x-6 hidden md:flex">
-          <a href="#" className="text-gray-700 hover:text-green-600 transition">Home</a>
-          <a href="#" className="text-gray-700 hover:text-green-600 transition">About</a>
-          <a href="#" className="text-gray-700 hover:text-green-600 transition">Features</a>
-          <a href="#" className="px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
-            Sign Up
-          </a>
+    <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-10 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0">
+            <Link to="/" className="text-xl font-bold">T. Rodriguez</Link>
+          </div>
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-center space-x-8">
+              <Link to="/services" className="text-gray-700 hover:text-gray-900">Services</Link>
+              <Link to="/about-us" className="text-gray-700 hover:text-gray-900">About Us</Link>
+              <Link to="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <span className="text-gray-700">Call Us Anytime: 523-456-7890</span>
+          </div>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -1,20 +1,16 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import About from "./components/About";
-import Footer from "./components/Footer";
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Features />
-      <About />
-      <Footer />
-    </>
-  );
-};
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
+  )
+}
 
-export default App;
+export default App
