@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from '../components/Navbar'
 import heroImage from '../assets/waste-management-hero.jpg'
 
@@ -52,21 +54,21 @@ const LandingPage = () => {
             {/* Real-time Monitoring */}
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="w-8 h-8 rounded-full border-2 border-gray-600 mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Real-time Monitoring</h3>
+              <h3 className="text-lg text-gray-900 font-semibold mb-2">Real-time Monitoring</h3>
               <p className="text-gray-800">Tailored waste management services designed to meet specific environmental needs.</p>
             </div>
 
             {/* Recycling Initiatives */}
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="w-8 h-8 rounded-full border-2 border-gray-600 mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Recycling Initiatives</h3>
+              <h3 className="text-lg text-gray-900 font-semibold mb-2">Recycling Initiatives</h3>
               <p className="text-gray-600">Expert guidance on implementing recycling programs and waste reduction strategies.</p>
             </div>
 
             {/* Hazardous Waste Handling */}
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="w-8 h-8 rounded-full border-2 border-gray-600 mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Hazardous Waste Handling</h3>
+              <h3 className="text-lg text-gray-900 font-semibold mb-2">Hazardous Waste Handling</h3>
               <p className="text-gray-600">Specialized in the safe handling and disposal of hazardous waste materials.</p>
             </div>
           </div>
@@ -76,14 +78,14 @@ const LandingPage = () => {
             {/* Regulatory Compliance */}
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="w-8 h-8 rounded-full border-2 border-gray-600 mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Regulatory Compliance</h3>
+              <h3 className="text-lg text-gray-900 font-semibold mb-2">Regulatory Compliance</h3>
               <p className="text-gray-600">Ensuring compliance with waste management regulations and implementing top-notch safety standards.</p>
             </div>
 
             {/* Customized Solutions */}
             <div className="bg-gray-100 p-6 rounded-lg">
               <div className="w-8 h-8 rounded-full border-2 border-gray-600 mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Customized Solutions</h3>
+              <h3 className="text-lg text-gray-900 font-semibold mb-2">Customized Solutions</h3>
               <p className="text-gray-600">Innovative and customized waste management solutions to address diverse environmental requirements.</p>
             </div>
           </div>
@@ -107,7 +109,7 @@ const LandingPage = () => {
             <img
               src="/path-to-your-phone-image.jpg"
               alt="Mobile App"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg text text-gray-900"
             />
           </div>
         </div>
@@ -119,9 +121,10 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-4">
             <h2 className="text-2xl text-gray-900 md:text-3xl font-bold">Our Expertise</h2>
-            <div className="w-8 h-8 rounded-full border-2 border-gray-800 flex items-center justify-center">
-              <span className="text-gray-800 flex-items-center justify-center">→</span>
-            </div>
+            <FontAwesomeIcon 
+            icon={faCircleRight} 
+            className="w-6 h-6 text-gray-800"
+          />
           </div>
           
           <p className="text-gray-900 mb-12">

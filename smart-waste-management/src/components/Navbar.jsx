@@ -25,6 +25,8 @@ const Navbar = () => {
             <Link to="/services" className="text-gray-600 hover:text-gray-900">Services</Link>
             <Link to="/about" className="text-gray-600 hover:text-gray-900">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
+            <Link to="/signin" className="text-blue-600 font-semibold hover:underline">Sign In</Link>
+            <Link to="/signup" className="ml-2 bg-white text-white px-4 py-1 border border-blue-600 rounded hover:bg-blue-200 transition">Sign Up</Link>
           </div>
 
           {/* Mobile menu button */}
@@ -80,6 +82,8 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            <Link to="/signin" className="block px-3 py-2 rounded-md text-blue-600 font-semibold hover:bg-blue-50" onClick={toggleMenu}>Sign In</Link>
+            <Link to="/signup" className="block px-3 py-2 rounded-md bg-white text-white border border-blue-600 hover:bg-blue-200" onClick={toggleMenu}>Sign Up</Link>
           </div>
         </div>
       )}
