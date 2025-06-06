@@ -101,7 +101,7 @@ const Footer = () => {
               <h5 className="text-white text-lg font-semibold mb-2">
                 Subscribe to Our Newsletter
               </h5>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-white">
                 Stay updated with our latest news and updates
               </p>
             </div>
@@ -109,7 +109,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-lg w-full md:w-64 bg-gray-800 border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="px-4 py-2 rounded-lg w-full md:w-64 bg-gray-800 border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button className="bg-blue-600 text-white px-6 py-2 rounded-r-lg hover:bg-blue-700 transition duration-300">
                 Subscribe
