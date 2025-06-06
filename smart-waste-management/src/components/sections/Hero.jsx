@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import heroImage from '../../assets/waste-management-hero.jpg' 
 
 const HeroSection = () => (
-  <main className="relative w-full h-screen">
+  <main id="hero" className="relative w-full h-screen">
     <div className="absolute inset-0">
       <img
         src={heroImage}
