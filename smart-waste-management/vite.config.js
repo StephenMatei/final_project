@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: "final_project/smart-waste-management/",
+  base: "final_project/",
 })
